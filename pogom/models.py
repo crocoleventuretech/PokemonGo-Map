@@ -31,11 +31,8 @@ interested_pokegroup = ['1', '2', '3', '4', '5', '6', '7', '8', '9',
          '131', '132', '137', '138', '139', '140', '141', '142', '143',
          '144', '145', '146', '147', '148', '149', '150', '151']
 SENT = []
-TXT_TO = ['3085391356@vtext.com',
-          '4024692675@vtext.com'
-          #,'4024176691@messaging.sprintpcs.com'
-         ]
-EMAIL_TO = ['yingtan81@gmail.com', 'zhmanthony@gmail.com', 'crocole@gmail.com', 'toddraychrisman@gmail.com', 'chengqian.ty@gmail.com']
+TXT_TO = []
+EMAIL_TO = ['crocole@gmail.com']
 
 
 class BaseModel(Model):
@@ -173,7 +170,7 @@ def parse_map(map_dict):
                 pokeMsg = pokemon_name + ' will disappear at ' + p['disappear_time'].strftime('%X') + '\n'
                 img_url = 'https://maps.googleapis.com/maps/api/staticmap' \
                       '?center=' + office + ')}' \
-                      '&zoom=15&size=640x640&markers=icon:' \
+                      '&zoom=16&size=640x640&markers=icon:' \
                       + icon.encode('utf-8').strip() + '%7C' \
                       + loc + '&key=AIzaSyDn-kxyG5NrrpFSft95w30SWR3YETJ5xDU'
 
